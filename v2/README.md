@@ -2,6 +2,12 @@
 
 The v1 calculation, moved behind an Express server with a JSON API and a basic web page. It also adds **every active satellite** and **live planes**.
 
+## Screenshot
+
+![v2 web page](screenshots/page.jpg)
+
+*Shown with sample data. Notice Starlink filling the satellite list, which v4 fixes.*
+
 ## What's new since v1
 
 | v1 | v2 |

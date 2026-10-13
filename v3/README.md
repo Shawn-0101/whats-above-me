@@ -2,6 +2,12 @@
 
 Adds weather balloons, aurora, fireballs, asteroids and bright stars, then groups everything into the layers of the sky: troposphere, stratosphere, mesosphere, thermosphere, exosphere, high orbit, solar system and stars.
 
+## Screenshot
+
+![v3 layers](screenshots/page.jpg)
+
+*Shown with sample data.*
+
 ## What's new since v2
 
 | v2 | v3 |

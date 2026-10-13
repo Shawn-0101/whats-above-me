@@ -4,6 +4,10 @@ A small Node.js script that lists what's in the sky above a location right now.
 
 This version answers one question before anything else gets built: **can I actually calculate what's above a set of coordinates?** No server and no UI, just the maths and a printed table.
 
+## Screenshot
+
+![Terminal output](screenshots/terminal.jpg)
+
 ## What it shows
 
 - Space stations (ISS, Tiangong and a few others)

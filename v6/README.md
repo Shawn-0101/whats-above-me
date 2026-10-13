@@ -4,6 +4,28 @@ Search a place, land in an illustrated scene, and scroll **up** from the ground 
 
 The visual style is inspired by the Samsung Weather app. All the art is original SVG drawn in code.
 
+## Screenshots
+
+![Night scene](screenshots/ground-night.jpg)
+
+| Day | Sunset |
+|---|---|
+| ![Day](screenshots/ground-day.jpg) | ![Sunset](screenshots/ground-sunset.jpg) |
+
+| Place search | Planes |
+|---|---|
+| ![Place search](screenshots/entry.jpg) | ![Troposphere](screenshots/troposphere.jpg) |
+
+| Hover card + ghost | High orbit |
+|---|---|
+| ![ISS hover card and ghost](screenshots/hover.jpg) | ![High orbit](screenshots/orbit.jpg) |
+
+| Solar system | Stars |
+|---|---|
+| ![Solar system](screenshots/solar.jpg) | ![Stars](screenshots/stars.jpg) |
+
+*Shown with the built-in sample data (Preview with sample data). Time of day is set from the real sun position.*
+
 ## What's new since v5
 
 | v5 | v6 |

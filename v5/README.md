@@ -4,6 +4,16 @@ The list becomes a place you scroll through. Search for a town (or use your loca
 
 Objects are simple glowing markers in this version. The illustrations come in v6.
 
+## Screenshots
+
+![Ground scene](screenshots/ground.jpg)
+
+| Place search | Thermosphere |
+|---|---|
+| ![Place search](screenshots/entry.jpg) | ![Thermosphere with markers](screenshots/thermosphere.jpg) |
+
+*Shown with sample data.*
+
 ## What's new since v4
 
 | v4 | v5 |

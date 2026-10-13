@@ -2,6 +2,12 @@
 
 A web app that shows what's above you at any moment, layer by layer, from planes and weather balloons up through the atmosphere to satellites, planets and stars. You start on the ground in an illustrated scene and scroll up into space. All of it comes from free public data, no API keys needed.
 
+![What's Above Me](v6/screenshots/ground-night.jpg)
+
+| Planes | Space stations | Solar system |
+|---|---|---|
+| ![Planes](v6/screenshots/troposphere.jpg) | ![ISS hover card](v6/screenshots/hover.jpg) | ![Solar system](v6/screenshots/solar.jpg) |
+
 This repo builds the project up in versions, from a first test of the idea to the finished app. Each folder is a working snapshot with its own README explaining what changed and how it works.
 
 ## Versions

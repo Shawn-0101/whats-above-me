@@ -2,6 +2,14 @@
 
 Cuts the list down to the interesting stuff, adds **ghosts** (the last time something was overhead), and keeps satellites working even when CelesTrak blocks you.
 
+## Screenshots
+
+| Filtered layers | Ghosts |
+|---|---|
+| ![Filtered layers](screenshots/page.jpg) | ![Ghost cards](screenshots/ghosts.jpg) |
+
+*Shown with sample data.*
+
 ## What's new since v3
 
 | v3 | v4 |
