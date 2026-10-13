@@ -1,0 +1,19 @@
+{
+  "name": "whats-above-me-v6",
+  "version": "6.0.0",
+  "description": "Web app showing what's in the sky above a location right now",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "astronomy-engine": "2.1.19",
+    "express": "4.21.2",
+    "satellite.js": "7.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}

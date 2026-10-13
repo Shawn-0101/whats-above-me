@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What's Above Me</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500&display=swap">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-phase="night" data-weather="partly" class="is-entry">
+
+<!-- shared svg defs -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="glint" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#fff" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<!-- fixed backdrop: sky colour, stars, weather effects, grain -->
+<div id="sky" aria-hidden="true"></div>
+<canvas id="stars" aria-hidden="true"></canvas>
+<canvas id="fx" aria-hidden="true"></canvas>
+<div id="flash" aria-hidden="true"></div>
+<div id="grain" aria-hidden="true"></div>
+
+<!-- entry -->
+<div id="entry">
+  <div class="entry-card" id="entryCard">
+    <h1>What's above me</h1>
+    <p class="entry-sub">Pick a place, then scroll up through the sky above it.</p>
+
+    <div class="search" id="search">
+      <label for="place" class="sr">Search a place</label>
+      <i class="ph ph-magnifying-glass"></i>
+      <input id="place" type="text" placeholder="Search a town or city" autocomplete="off" spellcheck="false">
+      <ul id="results" role="listbox" hidden></ul>
+    </div>
+
+    <div class="entry-actions">
+      <button class="btn btn-ghost" id="locate" type="button"><i class="ph ph-crosshair"></i>Use my location</button>
+      <button class="btn btn-link" id="recent" type="button" hidden></button>
+    </div>
+    <p class="entry-error" id="entryError" hidden></p>
+    <button class="btn-text" id="demoBtn" type="button">Preview with sample data</button>
+
+    <div class="loading" id="loading" hidden>
+      <p id="loadingText">Looking up the sky</p>
+      <div class="bar"><span></span></div>
+    </div>
+  </div>
+</div>
+
+<!-- top bar -->
+<header id="topbar">
+  <button class="pill" id="changePlace" type="button"><i class="ph ph-map-pin"></i><span id="topPlace">Somewhere</span></button>
+  <label class="switch">
+    <input type="checkbox" id="showAll">
+    <span class="track"><span class="thumb"></span></span>
+    Show everything
+  </label>
+</header>
+
+<!-- altimeter -->
+<aside id="altimeter" aria-hidden="true">
+  <div class="alt-readout"><span id="altValue">0 m</span><span id="altLayer">Ground</span></div>
+  <div class="alt-track"><div id="altTicks"></div><span id="altDot"></span></div>
+</aside>
+
+<!-- the sky, top of page = deep space, bottom = the ground -->
+<main id="world"></main>
+
+<!-- hover card -->
+<div id="card" role="tooltip" hidden></div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

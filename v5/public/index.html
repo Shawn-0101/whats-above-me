@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What's Above Me</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-phase="night" data-weather="partly" class="is-entry">
+
+  <!-- fixed backdrop: sky colour + stars -->
+  <div id="sky" aria-hidden="true"></div>
+  <canvas id="stars" aria-hidden="true"></canvas>
+
+  <!-- entry screen -->
+  <div id="entry">
+    <div class="entry-card">
+      <h1>What's above me</h1>
+      <p class="entry-sub">Pick a place, then scroll up through the sky above it.</p>
+
+      <div class="search" id="search">
+        <label for="place" class="sr">Search a place</label>
+        <input id="place" type="text" placeholder="Search a town or city" autocomplete="off" spellcheck="false">
+        <ul id="results" role="listbox" hidden></ul>
+      </div>
+
+      <div class="entry-actions">
+        <button class="btn" id="locate" type="button">Use my location</button>
+        <button class="btn btn-soft" id="recent" type="button" hidden></button>
+      </div>
+      <p class="entry-error" id="entryError" hidden></p>
+
+      <div class="loading" id="loading" hidden>
+        <p id="loadingText">Looking up the sky</p>
+        <div class="bar"><span></span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- top bar -->
+  <header id="topbar">
+    <button class="pill" id="changePlace" type="button"><span id="topPlace">Somewhere</span> · change</button>
+    <label class="switch"><input type="checkbox" id="showAll"> Show everything</label>
+  </header>
+
+  <!-- altimeter -->
+  <aside id="altimeter" aria-hidden="true">
+    <div class="alt-readout"><span id="altValue">0 m</span><span id="altLayer">Ground</span></div>
+    <div class="alt-track"><div id="altTicks"></div><span id="altDot"></span></div>
+  </aside>
+
+  <!-- the sky: top of the page = deep space, bottom = the ground -->
+  <main id="world"></main>
+
+  <script src="app.js"></script>
+</body>
+</html>

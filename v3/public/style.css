@@ -1,0 +1,101 @@
+:root {
+  --bg: #0b1020;
+  --panel: #141b31;
+  --line: #24304f;
+  --text: #e6ebf7;
+  --muted: #8d99b8;
+  --accent: #7cc4ff;
+  --bad: #ff8a8a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 15px/1.5 system-ui, sans-serif;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 16px 64px;
+}
+
+h1 { margin: 0 0 4px; font-size: 24px; }
+.sub { margin: 0 0 20px; color: var(--muted); }
+
+/* form */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: end;
+  padding: 14px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+input {
+  width: 130px;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+}
+
+button {
+  padding: 9px 14px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #06122a;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+/* results */
+#status { margin: 14px 0; color: var(--muted); font-size: 13px; }
+.bad { color: var(--bad); }
+
+section { margin-top: 22px; }
+
+section h2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--line);
+  font-size: 16px;
+}
+
+section h2 span { color: var(--muted); font-weight: 400; font-size: 13px; }
+
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+td { padding: 7px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+td.num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.small { color: var(--muted); font-size: 12px; }
+.more { padding-top: 6px; color: var(--muted); font-size: 12px; }
+
+/* v3: layers */
+.kind { color: var(--muted); font-size: 12px; }
+.empty { margin: 0; padding: 8px 0; color: var(--muted); font-size: 13px; }
+tr.past td { opacity: .6; font-style: italic; }

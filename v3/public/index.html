@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What's Above Me</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>What's Above Me</h1>
+    <p class="sub">Enter coordinates to see what's in the sky above them, layer by layer.</p>
+
+    <form id="form">
+      <label>Latitude <input id="lat" type="number" step="any" value="53.4219" required></label>
+      <label>Longitude <input id="lon" type="number" step="any" value="-6.4745" required></label>
+      <label>Min elevation (°) <input id="minEl" type="number" min="0" max="90" value="20"></label>
+      <button type="submit">Look up</button>
+      <button type="button" class="secondary" id="here">Use my location</button>
+    </form>
+
+    <div id="status"></div>
+    <div id="results"></div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
